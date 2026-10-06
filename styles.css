@@ -271,7 +271,7 @@ section.blue .legal{color:#aebccc}
 .pay.open{grid-template-rows:1fr}
 .pay>div{overflow:hidden;min-height:0}
 .pay-in{padding:16px 0 4px}
-.pay iframe{display:block;width:100%;height:640px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.pay iframe{display:block;width:100%;height:1300px;border:1px solid var(--line);border-radius:14px;background:#fff}
 .pay-load{display:flex;align-items:center;gap:10px;justify-content:center;padding:26px 0;color:var(--g2);font-size:.95rem}
 .pay-load.done{display:none}
 .pay-help{font-size:.84rem;text-align:center;margin:10px 0 12px}
@@ -324,3 +324,4 @@ section.blue .legal{color:#aebccc}
 @media(prefers-reduced-motion:reduce){.btn.pulse,.proof .dot{animation:none!important}.fstep{animation:none}}
 .framed .top,.framed footer{display:none}
 .framed .thanks{padding-top:34px}
+@media(min-width:860px){.pay iframe{height:1170px}}
