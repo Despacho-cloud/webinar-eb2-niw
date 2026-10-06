@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /gracias
+Disallow: /compra
+Disallow: /pago-ok
 Sitemap: https://webinar.myeb2.life/sitemap.xml

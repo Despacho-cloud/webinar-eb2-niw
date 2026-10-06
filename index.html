@@ -21,11 +21,11 @@
 <link rel="stylesheet" href="/styles.css">
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
-<body>
+<body data-pay="https://link.fastpaydirect.com/payment-link/6ac44b3ac0e70c7fefb72ad6">
 
 <header class="top"><div class="wrap">
   <a href="/" aria-label="EB2.life"><img src="/logo.webp" alt="EB2.life" width="94" height="34"></a>
-  <a class="btn sm" href="#registro">Reservar mi lugar</a>
+  <a class="btn sm pulse" href="#registro">Reservar mi lugar</a>
 </div></header>
 
 <main>
@@ -47,22 +47,91 @@
       <div><b data-d>--</b><span>días</span></div><div><b data-h>--</b><span>horas</span></div><div><b data-m>--</b><span>min</span></div><div><b data-s>--</b><span>seg</span></div>
     </div>
     <p class="count-note" data-count-note>Para el inicio del primer día · unos 60 minutos por sesión</p>
+    <p class="proof" data-registrados hidden><span class="dot"></span><b data-n>0</b> personas ya reservaron su lugar</p>
+    <ul class="notes">
+      <li>El enlace de acceso te llega por WhatsApp y correo.</li>
+      <li>Los regalos se anuncian en vivo el miércoles: solo para quienes asistan.</li>
+    </ul>
   </div>
 
-  <div class="card form reveal d1" id="registro">
-    <span class="free">Gratis</span>
-    <h2>Reserva tu lugar</h2>
-    <p class="sub">Te enviamos el acceso por correo y WhatsApp.</p>
-    <form id="reg" novalidate autocomplete="on">
-      <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre completo" maxlength="120" required><p class="err" data-for="name" role="alert"></p></div>
-      <div class="field"><label for="f-email">Correo electrónico</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="tucorreo@ejemplo.com" maxlength="160" required><p class="err" data-for="email" role="alert"></p></div>
-      <div class="field"><label for="f-phone">Teléfono con WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Tu número" required><p class="err" data-for="phone" role="alert"></p></div>
-      <div class="hp" aria-hidden="true"><label>Sitio web <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
-      <div class="field"><label class="consent"><input type="checkbox" name="consent" required><span>Acepto recibir información sobre este webinar y contenidos relacionados de MyEB2 por correo electrónico y WhatsApp. Puedo darme de baja cuando quiera.</span></label><p class="err" data-for="consent" role="alert"></p></div>
-      <button class="btn block" type="submit"><span class="lbl">Reservar mi lugar</span><span class="spin" aria-hidden="true"></span></button>
-      <p class="form-err" role="alert" hidden></p>
-      <p class="privacy">Al registrarte aceptas la <a href="https://myeb2.life/politicas-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a> de MyEB2. Material educativo: no es asesoría legal.</p>
-    </form>
+  <div class="card form flow reveal d1" id="registro" data-flow data-step="1">
+    <div class="prog">
+      <div class="prog-top"><span class="free">Gratis</span><span class="prog-txt" data-prog-txt>Paso 1 de 3</span></div>
+      <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1"><i data-bar></i></div>
+    </div>
+    <div class="vp" data-vp>
+
+      <div class="fstep" data-s="1">
+        <h2>Reserva tu lugar</h2>
+        <p class="sub">Te enviamos el acceso por correo y WhatsApp.</p>
+        <form id="reg" novalidate autocomplete="on">
+          <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre completo" maxlength="120" required><p class="err" data-for="name" role="alert"></p></div>
+          <div class="field"><label for="f-email">Correo electrónico</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="tucorreo@ejemplo.com" maxlength="160" required><p class="err" data-for="email" role="alert"></p></div>
+          <div class="field"><label for="f-phone">Teléfono con WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Tu número" required><p class="err" data-for="phone" role="alert"></p></div>
+          <div class="hp" aria-hidden="true"><label>Sitio web <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+          <div class="field"><label class="consent"><input type="checkbox" name="consent" required><span>Acepto recibir información sobre este webinar y contenidos relacionados de MyEB2 por correo electrónico y WhatsApp. Puedo darme de baja cuando quiera.</span></label><p class="err" data-for="consent" role="alert"></p></div>
+          <button class="btn block pulse" type="submit"><span class="lbl">Reservar mi lugar</span><span class="spin" aria-hidden="true"></span></button>
+          <p class="form-err" role="alert" hidden></p>
+          <p class="privacy">Al registrarte aceptas la <a href="https://myeb2.life/politicas-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a> de MyEB2. Material educativo: no es asesoría legal.</p>
+        </form>
+      </div>
+
+      <div class="fstep" data-s="2" hidden>
+        <div class="ok-line"><svg viewBox="0 0 28 28" fill="none" stroke="#18CB96" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 14.5 5.5 5.5L22 8.5"/></svg>Tu lugar ya está registrado</div>
+        <h2 data-t-promo="Tenemos una oferta especial para ti" data-t-reg="Una guía para acompañar el webinar">Tenemos una oferta especial para ti</h2>
+        <div class="o-grid">
+          <div class="o-book"><img src="/ebook-portada.webp" alt="Portada de la Guía práctica EB-2 NIW" width="640" height="828" loading="lazy"></div>
+          <div>
+            <p class="o-name"><b>Guía práctica EB-2 NIW</b><span>PDF · 26 páginas · contenido exclusivo para acompañar este webinar</span></p>
+            <ul class="bul sm">
+              <li>Autodiagnóstico de 10 preguntas y plan de 30 días</li>
+              <li>Tres ejemplos de Proposed Endeavor y hoja para escribir el tuyo</li>
+              <li>Plantilla de carta de recomendación y hoja de logros</li>
+              <li>Mapa de evidencia, glosario y preguntas frecuentes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="o-price">
+          <span class="was" data-promo-only>Antes <s data-was>US$22</s></span>
+          <span class="now"><span data-promo-only>Hoy </span><b data-price>US$9</b></span>
+        </div>
+        <p class="o-count" data-promo-only data-oferta-count>La oferta termina en <b>--</b></p>
+        <button class="btn block pulse" type="button" data-add aria-expanded="false" aria-controls="pay"><span>Agregar ebook · <span data-price>US$9</span></span></button>
+        <div class="pay" id="pay" data-pay><div>
+          <div class="pay-in">
+            <div class="pay-load" data-pay-load><span class="spin dark"></span>Cargando el pago…</div>
+            <iframe title="Pago de la Guía práctica EB-2 NIW" data-pay-frame allow="payment *" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <p class="pay-help"><a href="#" data-pay-newtab target="_blank" rel="noopener">¿No carga el pago? Ábrelo en una pestaña nueva</a></p>
+            <button class="btn ghost block" type="button" data-paid>Ya pagué, continuar</button>
+          </div>
+        </div></div>
+        <p class="skip-wrap"><button class="skip" type="button" data-skip>No, gracias, continuar</button></p>
+        <p class="o-note">El webinar es gratis aunque no compres la guía.</p>
+      </div>
+
+      <div class="fstep" data-s="3" hidden>
+        <div class="seal"><svg viewBox="0 0 28 28" fill="none" stroke="#18CB96" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14.5 5.5 5.5L22 8.5"/></svg></div>
+        <h2>Tu lugar está reservado</h2>
+        <div class="dates compact">
+          <div class="date"><b>20</b><div><small>Martes · Oct</small><span>Día 1</span></div></div>
+          <div class="date"><b>21</b><div><small>Miércoles · Oct</small><span>Día 2</span></div></div>
+        </div>
+        <p class="houston sm"><i>7:00 p. m.</i> hora de Houston, ambos días</p>
+        <div class="bought" data-bought hidden><b>Tu guía va en camino por WhatsApp y correo.</b><a class="btn ghost sm" href="https://assets.cdn.filesafe.space/EVu1LmsLZDg6dY0xfKnp/media/6ac442f0195f9172ed98a20f.pdf" target="_blank" rel="noopener">Abrir el PDF</a></div>
+        <p class="pending" data-pending hidden>Si ya pagaste, tu guía llega por WhatsApp y correo en unos minutos, apenas se confirme el pago.</p>
+        <a class="btn block wa pulse" href="/api/grupo" data-group rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>Unirme al grupo de WhatsApp</a>
+        <p class="g-note">Ahí compartimos avisos, enlaces y los regalos.</p>
+        <button class="btn ghost block" type="button" data-cal aria-expanded="false" aria-controls="cal">Agregar a mi calendario</button>
+        <div class="cal" id="cal" data-cal-panel><div><div class="cal-in">
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Webinar+EB-2+NIW+%C2%B7+D%C3%ADa+1&dates=20261021T000000Z%2F20261021T010000Z&details=Webinar+gratuito+EB-2+NIW.+D%C3%ADa+1%3A+informaci%C3%B3n+y+estrategia.%0AEntra+aqu%C3%AD%3A+https%3A%2F%2Fmeet.google.com%2Fjvm-swpy-itw&location=https%3A%2F%2Fmeet.google.com%2Fjvm-swpy-itw" target="_blank" rel="noopener">Día 1 · Google Calendar</a>
+          <a href="/webinar-eb2-niw-dia-1.ics" download>Día 1 · .ics</a>
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Webinar+EB-2+NIW+%C2%B7+D%C3%ADa+2&dates=20261022T000000Z%2F20261022T010000Z&details=Webinar+gratuito+EB-2+NIW.+D%C3%ADa+2%3A+continuaci%C3%B3n%2C+regalos+y+bonos%2C+y+preguntas+y+respuestas+en+vivo.%0AEntra+aqu%C3%AD%3A+https%3A%2F%2Fmeet.google.com%2Fjvm-swpy-itw&location=https%3A%2F%2Fmeet.google.com%2Fjvm-swpy-itw" target="_blank" rel="noopener">Día 2 · Google Calendar</a>
+          <a href="/webinar-eb2-niw-dia-2.ics" download>Día 2 · .ics</a>
+        </div></div></div>
+        <p class="meet">Sala de Meet, la misma los dos días:<br><a href="https://meet.google.com/jvm-swpy-itw" target="_blank" rel="noopener">meet.google.com/jvm-swpy-itw</a></p>
+      </div>
+
+    </div>
   </div>
 </div></section>
 
@@ -92,7 +161,7 @@
     <li><span class="chk"><svg viewBox="0 0 14 14" fill="none" stroke="#18CB96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 7.5 3 3 6-7"/></svg></span><div><h3>Webinar de dos días</h3><p>Dos sesiones en vivo de unos 60 minutos.</p></div></li>
     <li><span class="chk"><svg viewBox="0 0 14 14" fill="none" stroke="#18CB96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 7.5 3 3 6-7"/></svg></span><div><h3>Preguntas y respuestas en vivo</h3><p>En la sesión del día 2.</p></div></li>
     <li><span class="chk"><svg viewBox="0 0 14 14" fill="none" stroke="#18CB96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 7.5 3 3 6-7"/></svg></span><div><h3>Guía práctica</h3><p>Para quienes asisten.</p></div></li>
-    <li><span class="chk"><svg viewBox="0 0 14 14" fill="none" stroke="#18CB96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 7.5 3 3 6-7"/></svg></span><div><h3>Regalos y bonos</h3><p>Los anunciamos el día 1 y los entregamos el día 2.</p></div></li>
+    <li><span class="chk"><svg viewBox="0 0 14 14" fill="none" stroke="#18CB96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 7.5 3 3 6-7"/></svg></span><div><h3>Regalos y bonos</h3><p>Se anuncian en vivo el miércoles, solo para quienes asistan.</p></div></li>
   </ul>
 </div></section>
 
@@ -100,8 +169,8 @@
   <div class="reveal"><span class="label">Agenda y horarios</span>
   <h2>Dos días, una misma hora.</h2></div>
   <div class="days">
-    <div class="day reveal d1"><span class="num">Martes 20 de octubre</span><h3>Información y estrategia</h3><p>Visión de la EB-2 NIW y cómo construir tu estrategia. Anunciamos los regalos del día siguiente.</p></div>
-    <div class="day reveal d2"><span class="num">Miércoles 21 de octubre</span><h3>Continuación y preguntas</h3><p>Seguimos, entregamos regalos y bonos, y abrimos la sesión de preguntas y respuestas en vivo.</p></div>
+    <div class="day reveal d1"><span class="num">Martes 20 de octubre</span><h3>Información y estrategia</h3><p>Visión de la EB-2 NIW y cómo construir tu estrategia.</p></div>
+    <div class="day reveal d2"><span class="num">Miércoles 21 de octubre</span><h3>Continuación y preguntas</h3><p>Seguimos, anunciamos los regalos y bonos, y abrimos la sesión de preguntas y respuestas en vivo.</p></div>
   </div>
   <div class="reveal">
     <table class="tz"><thead><tr><th>Ciudad</th><th>Hora, ambos días</th></tr></thead><tbody>
@@ -143,9 +212,10 @@
       <li>Plantilla de carta de recomendación y hoja de logros con cifras</li>
       <li>Mapa de evidencia, glosario y preguntas frecuentes</li>
     </ul>
-    <div class="price"><b>US$9</b><span>pago único</span></div>
-    <a class="btn ghost" href="https://link.fastpaydirect.com/payment-link/6ac44b3ac0e70c7fefb72ad6">Quiero la guía</a>
-    <p class="note">El webinar es gratis aunque no compres la guía. Esta oferta es opcional.</p>
+    <div class="price"><s data-was data-promo-only>US$22</s><b data-price>US$9</b><span>pago único</span></div>
+    <p class="o-count" data-promo-only data-oferta-count>La oferta termina en <b>--</b></p>
+    <a class="btn ghost" href="https://link.fastpaydirect.com/payment-link/6ac44b3ac0e70c7fefb72ad6" data-pay-link>Quiero la guía</a>
+    <p class="note">El webinar es gratis aunque no compres la guía. La guía es opcional.</p>
   </div>
 </div></section>
 
@@ -165,7 +235,7 @@
   <img class="mark" src="/logo-blanco.webp" alt="EB2.life" width="168" height="61" loading="lazy">
   <h2>Reserva tu lugar para el 20 y 21 de octubre.</h2>
   <p class="lead">Gratis · 7:00 p. m. hora de Houston</p>
-  <a class="btn light" href="#registro">Reservar mi lugar</a>
+  <a class="btn light pulse" href="#registro">Reservar mi lugar</a>
   <p class="legal">Este webinar es material educativo y no constituye asesoría legal. Su asistencia no crea una relación abogado-cliente y no garantiza la aprobación de ninguna petición migratoria.</p>
 </div></section>
 </main>
