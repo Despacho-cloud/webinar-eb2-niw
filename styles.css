@@ -203,3 +203,28 @@ section.blue .mark{width:150px;margin:0 auto 26px;height:auto}
 .btn.light:hover{background:var(--ivory)}
 section.blue .legal{color:#aebccc}
 @media(min-width:860px){.stage{width:min(380px,100%);margin:0 auto}.snap{right:-22%}}
+
+/* own registration form */
+#reg .field{margin:0 0 14px}
+#reg label:not(.consent){display:block;font:600 .92rem/1.2 var(--sans);color:var(--blue);margin:0 0 6px}
+#reg input[type=text],#reg input[type=email],#reg input[type=tel]{width:100%;height:50px;padding:0 16px;border:1px solid #cfd3d6;border-radius:14px;background:#fff;color:var(--ink);font:400 1rem var(--sans);transition:border-color .2s,box-shadow .2s}
+#reg input::placeholder{color:#9aa1a8}
+#reg input:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 3px rgba(177,140,63,.22)}
+#reg input[aria-invalid=true]{border-color:#b3261e}
+#reg .iti{width:100%;display:block}
+.iti__selected-country{border-radius:14px 0 0 14px}
+.iti__country-list{font-family:var(--sans);font-size:.92rem}
+.consent{display:flex;gap:12px;align-items:flex-start;font:400 .88rem/1.45 var(--sans)!important;color:var(--g1);cursor:pointer;margin:2px 0 0}
+.consent input{flex:none;width:20px;height:20px;margin:2px 0 0;accent-color:var(--green)}
+.err{min-height:0;margin:5px 2px 0;font-size:.84rem;color:#b3261e}
+.err:empty{display:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+#reg .btn{margin-top:6px}
+#reg .btn[disabled]{opacity:.85;cursor:progress;transform:none}
+.spin{display:none;width:18px;height:18px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite}
+#reg.loading .spin{display:inline-block}
+@keyframes sp{to{transform:rotate(360deg)}}
+.form-err{margin:12px 0 0;padding:10px 14px;border-radius:12px;background:#fdecea;color:#8a1c14;font-size:.92rem}
+.privacy{margin:14px 2px 6px;font-size:.8rem;color:var(--g2);line-height:1.5}
+.card.form{padding-bottom:20px}
+.card.form p.sub{margin-bottom:18px}

@@ -17,6 +17,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/css/intlTelInput.css">
 <link rel="stylesheet" href="/styles.css">
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
@@ -52,7 +53,16 @@
     <span class="free">Gratis</span>
     <h2>Reserva tu lugar</h2>
     <p class="sub">Te enviamos el acceso por correo y WhatsApp.</p>
-    <iframe src="https://api.leadconnectorhq.com/widget/form/m0TK29CoZl6IaRomNGrq" style="width:100%;height:560px;border:none;border-radius:3px" id="inline-m0TK29CoZl6IaRomNGrq" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Formulario Visa EB2 Webinar Oct26" data-height="560" data-layout-iframe-id="inline-m0TK29CoZl6IaRomNGrq" data-form-id="m0TK29CoZl6IaRomNGrq" title="Formulario Visa EB2 Webinar Oct26"></iframe><script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    <form id="reg" novalidate autocomplete="on">
+      <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre completo" maxlength="120" required><p class="err" data-for="name" role="alert"></p></div>
+      <div class="field"><label for="f-email">Correo electrónico</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="tucorreo@ejemplo.com" maxlength="160" required><p class="err" data-for="email" role="alert"></p></div>
+      <div class="field"><label for="f-phone">Teléfono con WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Tu número" required><p class="err" data-for="phone" role="alert"></p></div>
+      <div class="hp" aria-hidden="true"><label>Sitio web <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+      <div class="field"><label class="consent"><input type="checkbox" name="consent" required><span>Acepto recibir información sobre este webinar y contenidos relacionados de MyEB2 por correo electrónico y WhatsApp. Puedo darme de baja cuando quiera.</span></label><p class="err" data-for="consent" role="alert"></p></div>
+      <button class="btn block" type="submit"><span class="lbl">Reservar mi lugar</span><span class="spin" aria-hidden="true"></span></button>
+      <p class="form-err" role="alert" hidden></p>
+      <p class="privacy">Al registrarte aceptas la <a href="https://myeb2.life/politicas-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a> de MyEB2. Material educativo: no es asesoría legal.</p>
+    </form>
   </div>
 </div></section>
 
@@ -164,6 +174,7 @@
   <img src="/logo.webp" alt="EB2.life" width="83" height="30" loading="lazy">
   <span>© 2026 EB2.life · MyEB2. Todos los derechos reservados.</span>
 </div></footer>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/js/intlTelInputWithUtils.min.js" defer></script>
 <script src="/app.js" defer></script>
 </body>
 </html>
