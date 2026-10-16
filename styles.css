@@ -435,3 +435,5 @@ section.blue .narrow{position:relative;z-index:1}
   .seal svg path,.ok-line svg path,.rv .chk svg path{stroke-dashoffset:0;stroke-dasharray:none;animation:none}
   .alt h2:after,.narrow>.reveal h2:after{transform:none}
 }
+
+.pay-msg{margin:0 0 12px;padding:10px 14px;border-radius:12px;background:#fdf6e3;color:#6b5420;font-size:.9rem;line-height:1.45;text-align:left}

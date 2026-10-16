@@ -255,14 +255,20 @@
       setTimeout(function(){pay.scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'})},520);
     }else stopPoll();
   });
+  var payMsg=$('[data-pay-msg]',card);
+  function setPayMsg(t){if(!payMsg)return;payMsg.textContent=t||'';payMsg.hidden=!t}
   paidBtn.addEventListener('click',function(){
-    paidBtn.disabled=true;
-    check(function(p){paidBtn.disabled=false;goPaid(p)});
+    paidBtn.disabled=true;setPayMsg('');
+    check(function(p){
+      paidBtn.disabled=false;
+      if(p)goPaid(true);
+      else setPayMsg('Aún no hemos recibido la confirmación de su pago. Complete el pago en el formulario; esta página continuará automáticamente al confirmarse. Si ya pagó, espere unos segundos y vuelva a intentarlo.');
+    });
   });
   skipBtn.addEventListener('click',function(){ls.set(STEP_KEY,'3');ls.set(PAID_KEY,'');bought=false;renderStep3();show(3)});
   window.addEventListener('message',function(e){
     if(e.origin!==location.origin)return;
-    if(e.data&&e.data.type==='eb2-paid')goPaid(true);
+    if(e.data&&e.data.type==='eb2-paid'){setPayMsg('Pago recibido. Confirmando…');check(function(p){if(p)goPaid(true)})}
   });
 
   // paso 3: calendario
