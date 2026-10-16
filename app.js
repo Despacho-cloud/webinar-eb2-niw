@@ -29,7 +29,7 @@
     var pad=function(n){return n<10?'0'+n:''+n};
     var tick=function(){
       var ms=target-Date.now();
-      if(ms<=0){box.hidden=true;if(note)note.textContent='El webinar ya comenzó. Entra desde el enlace de Meet.';return}
+      if(ms<=0){box.hidden=true;if(note)note.textContent='El webinar ya comenzó. Ingrese desde el enlace de Meet.';return}
       var s=Math.floor(ms/1000);
       f.d.textContent=Math.floor(s/86400);f.h.textContent=pad(Math.floor(s%86400/3600));
       f.m.textContent=pad(Math.floor(s%3600/60));f.s.textContent=pad(s%60);
@@ -44,7 +44,7 @@
       var tz=Intl.DateTimeFormat().resolvedOptions().timeZone;
       var fmt=new Intl.DateTimeFormat('es',{weekday:'long',day:'numeric',month:'long',hour:'numeric',minute:'2-digit',hour12:true,timeZone:tz});
       var d1=new Date(Date.UTC(2026,9,21,0,0,0));
-      loc.innerHTML='En tu zona horaria ('+tz.replace(/_/g,' ')+'): <b>'+fmt.format(d1)+'</b>';
+      loc.innerHTML='En su zona horaria ('+tz.replace(/_/g,' ')+'): <b>'+fmt.format(d1)+'</b>';
     }catch(e){}
   }
 })();
@@ -171,12 +171,12 @@
     var e={};
     var name=form.elements.name.value.trim();
     var email=form.elements.email.value.trim();
-    if(name.length<2)e.name='Escribe tu nombre.';
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))e.email='Escribe un correo válido.';
+    if(name.length<2)e.name='Ingrese su nombre completo.';
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))e.email='Ingrese un correo electrónico válido.';
     var phone='';
-    if(iti){phone=iti.getNumber();if(!phone||!iti.isValidNumber())e.phone='Escribe un teléfono válido para el país elegido.'}
-    else{phone=phoneEl.value.replace(/[^\d+]/g,'');if(!/^\+[1-9]\d{7,14}$/.test(phone))e.phone='Escribe tu teléfono con el prefijo del país, por ejemplo +593…'}
-    if(!form.elements.consent.checked)e.consent='Necesitamos tu consentimiento para enviarte la información.';
+    if(iti){phone=iti.getNumber();if(!phone||!iti.isValidNumber())e.phone='Ingrese un teléfono válido para el país seleccionado.'}
+    else{phone=phoneEl.value.replace(/[^\d+]/g,'');if(!/^\+[1-9]\d{7,14}$/.test(phone))e.phone='Ingrese su teléfono con el prefijo del país, por ejemplo +593…'}
+    if(!form.elements.consent.checked)e.consent='Necesitamos su autorización para enviarle la información.';
     return {errors:e,phone:phone,name:name,email:email};
   }
   function busy(on){form.classList.toggle('loading',on);btn.disabled=on;btn.querySelector('.lbl').textContent=on?'Reservando…':'Reservar mi lugar'}
@@ -209,11 +209,11 @@
       }
       busy(false);
       if(x.d&&x.d.errors){Object.keys(x.d.errors).forEach(function(k){setErr(k,x.d.errors[k])})}
-      banner.textContent=(x.d&&x.d.error)||'No pudimos completar tu registro. Intenta de nuevo.';
+      banner.textContent=(x.d&&x.d.error)||'No pudimos completar su registro. Por favor, inténtelo nuevamente.';
       banner.hidden=false;
     }).catch(function(){
       busy(false);
-      banner.textContent='No hay conexión en este momento. Revisa tu internet e intenta de nuevo; tus datos siguen aquí.';
+      banner.textContent='No se detecta conexión en este momento. Verifique su internet e inténtelo nuevamente; sus datos se conservan.';
       banner.hidden=false;
     });
   });
@@ -282,5 +282,41 @@
     go();
     if(wanted===2)offerListeners.push(function(){if(!offerAvailable()&&cur===2){ls.set(STEP_KEY,'3');show(3,true);renderStep3()}});
     if(wanted===3&&paidSaved==='pending')check(function(p){if(p){bought=true;ls.set(PAID_KEY,'1');renderStep3()}});
+  }
+})();
+
+// ---- movimiento: progreso de lectura, entrada escalonada y cuenta regresiva animada ----
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $$=function(s){return [].slice.call(document.querySelectorAll(s))};
+
+  if(!reduce){
+    var bar=document.createElement('div');bar.className='progress';bar.setAttribute('aria-hidden','true');document.body.appendChild(bar);
+    var tk=false;
+    var upd=function(){
+      var h=document.documentElement.scrollHeight-window.innerHeight;
+      bar.style.transform='scaleX('+(h>0?Math.min(1,window.scrollY/h):0)+')';tk=false;
+    };
+    window.addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  }
+
+  var items=$$('.receive li,.facts li');
+  items.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children);el.style.setProperty('--i',sib.indexOf(el));el.classList.add('rv');
+  });
+  var cards=$$('.three .card');
+  if('IntersectionObserver' in window&&!reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+    items.forEach(function(el){io.observe(el)});
+    cards.forEach(function(c){io.observe(c)});
+  }else{items.concat(cards).forEach(function(el){el.classList.add('in')})}
+
+  if(!reduce){
+    $$('[data-count] b').forEach(function(b){
+      var last=b.textContent;
+      new MutationObserver(function(){
+        if(b.textContent!==last){last=b.textContent;b.classList.remove('tick');void b.offsetWidth;b.classList.add('tick')}
+      }).observe(b,{childList:true,characterData:true,subtree:true});
+    });
   }
 })();

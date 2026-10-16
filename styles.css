@@ -325,3 +325,113 @@ section.blue .legal{color:#aebccc}
 .framed .top,.framed footer{display:none}
 .framed .thanks{padding-top:34px}
 @media(min-width:860px){.pay iframe{height:1170px}}
+
+/* ===== refinamientos visuales y de movimiento ===== */
+:root{--ease:cubic-bezier(.22,.8,.24,1)}
+.reveal{transition:opacity .9s var(--ease),transform .9s var(--ease);transform:translateY(22px)}
+.reveal.in{transform:none}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--i,0)*90ms)}
+.rv.in{opacity:1;transform:none}
+
+/* barra de progreso de lectura */
+.progress{position:fixed;left:0;top:0;height:3px;width:100%;z-index:60;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--gold),#d9bb73);pointer-events:none}
+
+/* entrada del encabezado */
+.top{animation:dropin .7s var(--ease) both}
+@keyframes dropin{from{opacity:0;transform:translateY(-100%)}to{opacity:1;transform:none}}
+
+/* hero: entrada escalonada */
+.hero .reveal>*{animation:rise .9s var(--ease) both}
+.hero .reveal>*:nth-child(1){animation-delay:.05s}.hero .reveal>*:nth-child(2){animation-delay:.15s}.hero .reveal>*:nth-child(3){animation-delay:.25s}
+.hero .reveal>*:nth-child(4){animation-delay:.35s}.hero .reveal>*:nth-child(5){animation-delay:.45s}.hero .reveal>*:nth-child(6){animation-delay:.55s}
+.hero .reveal>*:nth-child(n+7){animation-delay:.65s}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.hero:before{content:"";position:absolute;width:520px;height:520px;left:-180px;top:-160px;border-radius:50%;background:radial-gradient(circle,rgba(177,140,63,.14),transparent 65%);animation:drift 14s ease-in-out infinite alternate;pointer-events:none}
+@keyframes drift{to{transform:translate(90px,60px) scale(1.12)}}
+
+/* etiqueta: línea dorada que se traza */
+.label:before{transform-origin:left;animation:linegrow 1s var(--ease) .3s both}
+@keyframes linegrow{from{transform:scaleX(0)}to{transform:none}}
+
+/* títulos con filete dorado */
+.alt h2:after,.narrow>.reveal h2:after{content:"";display:block;width:56px;height:2px;margin-top:16px;background:linear-gradient(90deg,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform 1s var(--ease) .35s}
+.reveal.in h2:after{transform:none}
+
+/* brillo en botones */
+.btn{position:relative;overflow:hidden;isolation:isolate}
+.btn:not(.ghost):not(.light):after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);transform:translateX(-120%);transition:transform .8s var(--ease)}
+.btn:not(.ghost):not(.light):hover:after{transform:translateX(120%)}
+.btn svg{transition:transform .3s var(--ease)}
+.btn:hover svg{transform:scale(1.12) rotate(-4deg)}
+
+/* tarjetas */
+.three .card,.day,.steps li,.date,.count div{transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s var(--ease)}
+.three .card:hover,.day:hover,.steps li:hover{transform:translateY(-6px);box-shadow:0 22px 40px -22px rgba(38,66,87,.35);border-color:var(--gold-l)}
+.three .card{overflow:hidden}
+.three .card:before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+.three .card:hover:before{transform:none}
+.three svg path,.three svg circle{stroke-dasharray:240;stroke-dashoffset:240;transition:stroke-dashoffset 1.6s var(--ease) .3s}
+.three .card.in svg path,.three .card.in svg circle{stroke-dashoffset:0}
+.date:hover{transform:translateY(-3px);box-shadow:0 14px 26px -16px rgba(38,66,87,.4)}
+
+/* lista de beneficios */
+.receive li{transition:background .35s,padding .35s var(--ease)}
+.receive li:hover{background:linear-gradient(90deg,rgba(177,140,63,.07),transparent);padding-left:10px}
+.chk{transition:background .35s,transform .45s var(--ease)}
+.receive li:hover .chk{background:#e7f9f2;transform:scale(1.1)}
+.rv.in .chk svg path{stroke-dasharray:20;stroke-dashoffset:20;animation:tick .6s var(--ease) calc(var(--i,0)*90ms + .35s) forwards}
+@keyframes tick{to{stroke-dashoffset:0}}
+
+/* cuenta regresiva */
+.count div{position:relative;overflow:hidden}
+.count div:after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(177,140,63,.22)}
+.count b.tick{animation:flip .45s var(--ease)}
+@keyframes flip{0%{transform:translateY(-35%);opacity:0}100%{transform:none;opacity:1}}
+
+/* portada del libro: flotación suave */
+.book{animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.bul li{transition:transform .35s var(--ease)}
+.bul li:hover{transform:translateX(4px)}
+
+/* presentador */
+.arch img{transition:transform .8s var(--ease)}
+.stage:hover .arch img{transform:translateX(-50%) scale(1.025)}
+
+/* zona horaria */
+.tz tr{transition:background .3s}
+.tz tbody tr:hover td{background:#faf5e8}
+
+/* preguntas */
+summary{transition:color .25s,padding-left .35s var(--ease)}
+summary:hover{color:var(--gold);padding-left:6px}
+details[open] summary{color:var(--gold)}
+.ans p{opacity:0;transform:translateY(-6px);transition:opacity .45s .08s,transform .45s .08s var(--ease)}
+details[open] .ans p{opacity:1;transform:none}
+
+/* formulario */
+#reg input{transition:border-color .25s,box-shadow .25s,transform .25s var(--ease)}
+#reg input:focus{transform:translateY(-1px)}
+.card.form:before{content:"";position:absolute;inset:-1px;border-radius:20px;pointer-events:none;background:linear-gradient(120deg,transparent 40%,rgba(177,140,63,.5) 50%,transparent 60%) 0 0/250% 100%;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;padding:1px;animation:sheen 6s ease-in-out infinite}
+@keyframes sheen{0%{background-position:130% 0}60%,100%{background-position:-60% 0}}
+
+/* sello de confirmación */
+.seal{position:relative}
+.seal:after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1px solid var(--green);opacity:0;animation:halo 2.8s ease-out infinite}
+@keyframes halo{0%{transform:scale(.85);opacity:.7}100%{transform:scale(1.35);opacity:0}}
+.seal svg path,.ok-line svg path{stroke-dasharray:30;stroke-dashoffset:30;animation:tick .8s var(--ease) .3s forwards}
+
+/* cierre */
+section.blue:after{content:"";position:absolute;width:480px;height:480px;right:-140px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(177,140,63,.22),transparent 65%);animation:drift 16s ease-in-out infinite alternate;pointer-events:none}
+section.blue .narrow{position:relative;z-index:1}
+
+.top .btn{transition:opacity .4s var(--ease),transform .4s var(--ease),background .25s,box-shadow .25s}
+
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none}
+  .progress{display:none}
+  .top,.hero .reveal>*,.hero:before,.label:before,.book,.seal:after,section.blue:after,.card.form:before{animation:none!important}
+  .three svg path,.three svg circle{stroke-dashoffset:0;stroke-dasharray:none}
+  .seal svg path,.ok-line svg path,.rv .chk svg path{stroke-dashoffset:0;stroke-dasharray:none;animation:none}
+  .alt h2:after,.narrow>.reveal h2:after{transform:none}
+}

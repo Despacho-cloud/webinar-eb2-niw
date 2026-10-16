@@ -54,7 +54,7 @@ module.exports = async (req, res) => {
   if (origin && !ALLOWED_ORIGINS.includes(origin)) return json(res, 403, { ok: false, error: 'Origen no permitido.' });
 
   const ip = String(req.headers['x-forwarded-for'] || req.socket?.remoteAddress || '').split(',')[0].trim();
-  if (limited(ip)) return json(res, 429, { ok: false, error: 'Demasiados intentos. Intenta de nuevo en unos minutos.' });
+  if (limited(ip)) return json(res, 429, { ok: false, error: 'Se registraron demasiados intentos. Por favor, inténtelo nuevamente en unos minutos.' });
 
   const b = typeof req.body === 'object' && req.body ? req.body : {};
 
@@ -67,17 +67,17 @@ module.exports = async (req, res) => {
   const consent = b.consent === true || b.consent === 'true' || b.consent === 'on';
 
   const errors = {};
-  if (name.length < 2 || !/\p{L}/u.test(name)) errors.name = 'Escribe tu nombre.';
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) errors.email = 'Escribe un correo válido.';
-  if (!/^\+[1-9]\d{7,14}$/.test(phone)) errors.phone = 'Escribe un teléfono válido con tu país.';
-  if (!consent) errors.consent = 'Necesitamos tu consentimiento para enviarte la información.';
-  if (Object.keys(errors).length) return json(res, 422, { ok: false, errors, error: 'Revisa los campos marcados.' });
+  if (name.length < 2 || !/\p{L}/u.test(name)) errors.name = 'Ingrese su nombre completo.';
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) errors.email = 'Ingrese un correo electrónico válido.';
+  if (!/^\+[1-9]\d{7,14}$/.test(phone)) errors.phone = 'Ingrese un teléfono válido con el prefijo de su país.';
+  if (!consent) errors.consent = 'Necesitamos su autorización para enviarle la información.';
+  if (Object.keys(errors).length) return json(res, 422, { ok: false, errors, error: 'Revise los campos señalados.' });
 
   const token = process.env.GHL_TOKEN;
   const locationId = process.env.GHL_LOCATION_ID;
   if (!token || !locationId) {
     console.error('registro: faltan variables de entorno GHL_TOKEN / GHL_LOCATION_ID');
-    return json(res, 503, { ok: false, error: 'El registro no está disponible por un momento. Intenta de nuevo en unos minutos.' });
+    return json(res, 503, { ok: false, error: 'El registro no está disponible en este momento. Por favor, inténtelo nuevamente en unos minutos.' });
   }
 
   const [firstName, ...rest] = name.split(' ');
@@ -95,10 +95,10 @@ module.exports = async (req, res) => {
     }, token);
     if (!up.ok) {
       console.error('registro: upsert falló', up.status);
-      return json(res, 502, { ok: false, error: 'No pudimos completar tu registro. Intenta de nuevo.' });
+      return json(res, 502, { ok: false, error: 'No pudimos completar su registro. Por favor, inténtelo nuevamente.' });
     }
     const id = up.data?.contact?.id;
-    if (!id) return json(res, 502, { ok: false, error: 'No pudimos completar tu registro. Intenta de nuevo.' });
+    if (!id) return json(res, 502, { ok: false, error: 'No pudimos completar su registro. Por favor, inténtelo nuevamente.' });
 
     const tag = await ghl(`/contacts/${id}/tags`, 'POST', { tags: [TAG_REGISTRO] }, token);
     if (!tag.ok) console.error('registro: etiqueta falló', tag.status);
@@ -106,6 +106,6 @@ module.exports = async (req, res) => {
     return json(res, 200, { ok: true, id });
   } catch (e) {
     console.error('registro: error', e?.name || 'desconocido');
-    return json(res, 502, { ok: false, error: 'No pudimos completar tu registro. Intenta de nuevo.' });
+    return json(res, 502, { ok: false, error: 'No pudimos completar su registro. Por favor, inténtelo nuevamente.' });
   }
 };
