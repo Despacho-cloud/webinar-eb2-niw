@@ -447,3 +447,14 @@ section.blue .narrow{position:relative;z-index:1}
 .peek figure:hover img{transform:translateY(-6px) scale(1.02);box-shadow:0 26px 40px -22px rgba(26,47,63,.6)}
 .peek figcaption{margin-top:10px;font-size:.88rem;color:var(--g1)}
 @media(min-width:860px){.peek-grid{grid-template-columns:repeat(4,1fr);gap:22px}}
+
+/* barra de urgencia */
+.urgent{position:fixed;top:68px;left:0;right:0;z-index:49;display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;background:linear-gradient(90deg,#1a2f3f,#264257);color:#fff;font:600 .9rem/1.3 var(--sans);text-align:center;box-shadow:0 6px 18px -12px rgba(0,0,0,.6)}
+.urgent b{color:#e6d7b5;font-variant-numeric:tabular-nums}
+.urgent .u-price{color:#fff;font-size:1.05em}
+.urgent .flash{width:9px;height:9px;border-radius:50%;background:#18CB96;animation:ping 1.6s infinite}
+.urgent[hidden]{display:none!important}
+.framed .urgent{display:none}
+.o-count{font-weight:600}
+@media(max-width:520px){.urgent{font-size:.8rem;padding:7px 10px}}
+@media(prefers-reduced-motion:reduce){.urgent .flash{animation:none}}
