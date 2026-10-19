@@ -437,3 +437,13 @@ section.blue .narrow{position:relative;z-index:1}
 }
 
 .pay-msg{margin:0 0 12px;padding:10px 14px;border-radius:12px;background:#fdf6e3;color:#6b5420;font-size:.9rem;line-height:1.45;text-align:left}
+
+/* vista previa del ebook */
+.peek{margin-top:clamp(36px,6vw,64px)}
+.peek h3{text-align:center;margin-bottom:22px}
+.peek-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.peek figure{margin:0;text-align:center}
+.peek img{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;box-shadow:0 18px 32px -22px rgba(26,47,63,.55);transition:transform .45s var(--ease),box-shadow .45s var(--ease);background:#fff}
+.peek figure:hover img{transform:translateY(-6px) scale(1.02);box-shadow:0 26px 40px -22px rgba(26,47,63,.6)}
+.peek figcaption{margin-top:10px;font-size:.88rem;color:var(--g1)}
+@media(min-width:860px){.peek-grid{grid-template-columns:repeat(4,1fr);gap:22px}}
