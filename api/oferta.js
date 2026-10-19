@@ -1,9 +1,9 @@
 // GET /api/oferta -> precio vigente de la guía según la fecha del servidor.
-// Hasta el miércoles 21 de octubre de 2026, 11:59:59 p. m. (Houston, UTC-5): US$9 (antes US$22).
+// Hasta el jueves 29 de octubre de 2026, 11:59:59 p. m. (Houston, UTC-5): US$9 (antes US$22).
 // Después: US$22, sin cuenta regresiva ni lenguaje de oferta.
 // Variables de entorno opcionales (Vercel): PAY_URL_PROMO, PAY_URL_REGULAR.
 
-const DEADLINE = Date.UTC(2026, 9, 22, 4, 59, 59); // 2026-10-21 23:59:59 en Houston (UTC-5)
+const DEADLINE = Date.UTC(2026, 9, 30, 4, 59, 59); // 2026-10-29 23:59:59 en Houston (UTC-5)
 const PAY_PROMO = 'https://link.fastpaydirect.com/payment-link/6ac44b3ac0e70c7fefb72ad6';
 
 module.exports = (req, res) => {

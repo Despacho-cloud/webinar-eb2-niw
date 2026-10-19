@@ -20,8 +20,8 @@
   }
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 
-  // countdown to Tue 20 Oct 2026, 7:00 p. m. Houston (CDT, UTC-5) = 2026-10-21T00:00:00Z
-  var target=Date.UTC(2026,9,21,0,0,0);
+  // countdown to Thu 29 Oct 2026, 7:00 p. m. Houston (CDT, UTC-5) = 2026-10-30T00:00:00Z
+  var target=Date.UTC(2026,9,30,0,0,0);
   var box=document.querySelector('[data-count]');
   if(box){
     var f={d:box.querySelector('[data-d]'),h:box.querySelector('[data-h]'),m:box.querySelector('[data-m]'),s:box.querySelector('[data-s]')};
@@ -43,7 +43,7 @@
     try{
       var tz=Intl.DateTimeFormat().resolvedOptions().timeZone;
       var fmt=new Intl.DateTimeFormat('es',{weekday:'long',day:'numeric',month:'long',hour:'numeric',minute:'2-digit',hour12:true,timeZone:tz});
-      var d1=new Date(Date.UTC(2026,9,21,0,0,0));
+      var d1=new Date(Date.UTC(2026,9,30,0,0,0));
       loc.innerHTML='En su zona horaria ('+tz.replace(/_/g,' ')+'): <b>'+fmt.format(d1)+'</b>';
     }catch(e){}
   }
@@ -53,7 +53,7 @@
 (function(){
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   var CID_KEY='eb2_cid',STEP_KEY='eb2_step',PAID_KEY='eb2_paid';
-  var DEADLINE=Date.UTC(2026,9,22,4,59,59); // mié 21 oct 2026, 11:59:59 p. m. Houston (UTC-5)
+  var DEADLINE=Date.UTC(2026,9,30,4,59,59); // jue 29 oct 2026, 11:59:59 p. m. Houston (UTC-5)
   var $=function(s,r){return (r||document).querySelector(s)};
   var $$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
   var ls={
