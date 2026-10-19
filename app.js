@@ -53,7 +53,7 @@
 (function(){
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   var CID_KEY='eb2_cid',STEP_KEY='eb2_step',PAID_KEY='eb2_paid';
-  var DEADLINE=Date.UTC(2026,9,30,4,59,59); // jue 29 oct 2026, 11:59:59 p. m. Houston (UTC-5)
+  var DEADLINE=Date.UTC(2099,0,1,0,0,0); // jue 29 oct 2026, 11:59:59 p. m. Houston (UTC-5)
   var $=function(s,r){return (r||document).querySelector(s)};
   var $$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
   var ls={
@@ -72,14 +72,14 @@
 
   // ----- oferta: precio verdadero según la fecha -----
   var oferta={phase:Date.now()<=DEADLINE?'promo':'regular',price:null,was:null,endsAt:DEADLINE,payUrl:document.body.getAttribute('data-pay')||null,offset:0};
-  oferta.price=oferta.phase==='promo'?9:22;oferta.was=oferta.phase==='promo'?22:null;
+  oferta.price=9;oferta.was=37;
   if(oferta.phase!=='promo')oferta.payUrl=null; // el enlace regular lo entrega /api/oferta
   var offerListeners=[];
 
   function applyOferta(){
     var promo=oferta.phase==='promo';
     $$('[data-price]').forEach(function(e){e.textContent='US$'+oferta.price});
-    $$('[data-was]').forEach(function(e){e.textContent='US$'+(oferta.was||22)});
+    $$('[data-was]').forEach(function(e){e.textContent='US$'+(oferta.was||37)});
     $$('[data-promo-only]').forEach(function(e){e.hidden=!promo});
     $$('[data-t-promo]').forEach(function(e){e.textContent=e.getAttribute(promo?'data-t-promo':'data-t-reg')});
     $$('[data-pay-link]').forEach(function(a){if(oferta.payUrl){a.href=oferta.payUrl;a.hidden=false}else a.hidden=true});

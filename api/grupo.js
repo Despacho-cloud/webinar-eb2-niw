@@ -1,7 +1,7 @@
 // GET /api/grupo?cid=<id>  -> agrega la etiqueta grupo-wa-clic y redirige (302) al grupo de WhatsApp.
 // Si falta el id o la configuración, solo redirige.
 
-const GRUPO = 'https://chat.whatsapp.com/JT1Tik0U2BxDIxlfg1SDEi?s=cl&p=i&mlu=0&ilr=4';
+const GRUPO = 'https://chat.whatsapp.com/JT1Tik0U2BxDIxlfg1SDEi?s=cl&p=i&mlu=4&ilr=4&iam=0';
 const TAG = 'grupo-wa-clic';
 
 module.exports = async (req, res) => {
