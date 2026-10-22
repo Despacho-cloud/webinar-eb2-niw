@@ -5,54 +5,54 @@
     <tr><td align="center" bgcolor="#264257" style="padding:26px 20px 22px"><img src="https://webinar.myeb2.life/email/logo-blanco.png" width="190" alt="HAN'EI USA · MyEB2" style="display:block;border:0;height:auto"></td></tr>
     <tr><td height="4" bgcolor="#B18C3F" style="font-size:0;line-height:0">&nbsp;</td></tr>
     <tr><td style="padding:34px 32px 6px" align="center">
-      <div style="font:700 12px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:2.2px;color:#B18C3F;text-transform:uppercase">Registro confirmado</div>
-      <div style="font:700 28px/1.25 Georgia,'Times New Roman',serif;color:#264257;padding:12px 0 4px">Su lugar está reservado</div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:2.2px;color:#B18C3F;text-transform:uppercase">Registro confirmado</div>
+      <div style="font-family:Georgia,serif;font-size:28px;font-weight:700;line-height:1.25;color:#264257;padding:12px 0 4px">Su lugar está reservado</div>
     </td></tr>
-    <tr><td style="padding:10px 32px 4px;font:400 16px/1.65 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540"><p style="margin:0 0 12px">Estimado(a) {{contact.first_name}}:</p>
+    <tr><td style="padding:10px 32px 4px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:400;line-height:1.65;color:#2b3540"><p style="margin:0 0 12px">Estimado(a) {{contact.first_name}}:</p>
 <p style="margin:0">Hemos confirmado su registro al webinar <strong>«Estructure una estrategia sólida para su petición EB-2 NIW»</strong>. Para no perderse ningún aviso, le pedimos un último paso.</p></td></tr>
     <tr><td style="padding:14px 32px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e6dfcf;border-radius:8px">
   <tr>
     <td width="33%" align="center" style="padding:18px 6px;border-right:1px solid #eee6d4">
-      <div style="font:700 11px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Fecha</div>
-      <div style="font:700 17px Georgia,'Times New Roman',serif;color:#264257;padding-top:6px">Jueves 29<br>de octubre</div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Fecha</div>
+      <div style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:#264257;padding-top:6px">Jueves 29<br>de octubre</div>
     </td>
     <td width="34%" align="center" style="padding:18px 6px;border-right:1px solid #eee6d4">
-      <div style="font:700 11px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Hora</div>
-      <div style="font:700 17px Georgia,'Times New Roman',serif;color:#264257;padding-top:6px">7:00 p. m.<br><span style="font:400 12px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#6a737d">hora de Houston</span></div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Hora</div>
+      <div style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:#264257;padding-top:6px">7:00 p. m.<br><span style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;color:#6a737d">hora de Houston</span></div>
     </td>
     <td width="33%" align="center" style="padding:18px 6px">
-      <div style="font:700 11px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Modalidad</div>
-      <div style="font:700 17px Georgia,'Times New Roman',serif;color:#264257;padding-top:6px">En vivo<br><span style="font:400 12px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#6a737d">online · ~60 min</span></div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Modalidad</div>
+      <div style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:#264257;padding-top:6px">En vivo<br><span style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;color:#6a737d">online · ~60 min</span></div>
     </td>
   </tr>
 </table>
-<div style="font:400 12px/1.5 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#6a737d;text-align:center;padding-top:8px">Equivale a las 7:00 p. m. en Ecuador, Colombia y Perú · 6:00 p. m. en México</div></td></tr><tr><td style="padding:14px 32px">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;line-height:1.5;color:#6a737d;text-align:center;padding-top:8px">Equivale a las 7:00 p. m. en Ecuador, Colombia y Perú · 6:00 p. m. en México</div></td></tr><tr><td style="padding:14px 32px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#264257;border-radius:8px"><tr><td align="center" style="padding:26px 22px">
-  <div style="font:700 11px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:2px;color:#d9b866;text-transform:uppercase">Paso importante</div>
-  <div style="font:700 22px/1.3 Georgia,'Times New Roman',serif;color:#ffffff;padding:8px 0 10px">Únase al grupo privado de WhatsApp</div>
-  <div style="font:400 14px/1.6 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#c9d3dc;padding-bottom:18px">Allí enviamos el <strong style="color:#fff">enlace de acceso</strong>, los recordatorios y los <strong style="color:#fff">materiales de apoyo</strong> antes y después de la sesión.</div>
+  <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;color:#d9b866;text-transform:uppercase">Paso importante</div>
+  <div style="font-family:Georgia,serif;font-size:22px;font-weight:700;line-height:1.3;color:#ffffff;padding:8px 0 10px">Únase al grupo privado de WhatsApp</div>
+  <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;line-height:1.6;color:#c9d3dc;padding-bottom:18px">Allí enviamos el <strong style="color:#fff">enlace de acceso</strong>, los recordatorios y los <strong style="color:#fff">materiales de apoyo</strong> antes y después de la sesión.</div>
   
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto">
   <tr><td align="center" bgcolor="#25a55a" style="border-radius:6px">
-    <a href="https://services.msgsndr.com/urls/l/oocmJ7FJav" target="_blank" style="display:inline-block;padding:16px 34px;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:.3px;color:#ffffff;text-decoration:none;border-radius:6px">Unirme al grupo de WhatsApp</a>
+    <a href="https://services.msgsndr.com/urls/l/oocmJ7FJav" target="_blank" style="display:inline-block;padding:16px 34px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;letter-spacing:.3px;color:#ffffff;text-decoration:none;border-radius:6px">Unirme al grupo de WhatsApp</a>
   </td></tr>
 </table>
 </td></tr></table></td></tr><tr><td style="padding:14px 32px">
-<div style="font:700 13px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase;padding-bottom:4px">Cómo conectarse</div>
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase;padding-bottom:4px">Cómo conectarse</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr><td width="26" valign="top" style="padding:7px 0;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font:400 15px/1.55 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540">Acceda a la sala desde este enlace: <a href="https://meet.google.com/jym-swpy-itw" style="color:#264257;font-weight:700">meet.google.com/jym-swpy-itw</a></td></tr>
-<tr><td width="26" valign="top" style="padding:7px 0;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font:400 15px/1.55 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540">Agregue la sesión a su calendario desde la <a href="https://webinar.myeb2.life/gracias" style="color:#264257;font-weight:700">página de confirmación</a>.</td></tr>
-<tr><td width="26" valign="top" style="padding:7px 0;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font:400 15px/1.55 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540">Conéctese unos minutos antes, a las 6:50 p. m. (hora de Houston).</td></tr>
+<tr><td width="26" valign="top" style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.55;color:#2b3540">Acceda a la sala desde este enlace: <a href="https://meet.google.com/jym-swpy-itw" style="color:#264257;font-weight:700">meet.google.com/jym-swpy-itw</a></td></tr>
+<tr><td width="26" valign="top" style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.55;color:#2b3540">Agregue la sesión a su calendario desde la <a href="https://webinar.myeb2.life/gracias" style="color:#264257;font-weight:700">página de confirmación</a>.</td></tr>
+<tr><td width="26" valign="top" style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.55;color:#2b3540">Conéctese unos minutos antes, a las 6:50 p. m. (hora de Houston).</td></tr>
 </table></td></tr>
     <tr><td style="padding:22px 32px 8px">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto">
   <tr><td align="center" bgcolor="#264257" style="border-radius:6px">
-    <a href="https://webinar.myeb2.life/gracias" target="_blank" style="display:inline-block;padding:16px 34px;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:.3px;color:#ffffff;text-decoration:none;border-radius:6px">Ver mi confirmación y agregar al calendario</a>
+    <a href="https://webinar.myeb2.life/gracias" target="_blank" style="display:inline-block;padding:16px 34px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;letter-spacing:.3px;color:#ffffff;text-decoration:none;border-radius:6px">Ver mi confirmación y agregar al calendario</a>
   </td></tr>
 </table></td></tr>
-    <tr><td style="padding:6px 32px 30px;font:400 13px/1.6 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#6a737d;text-align:center">Si ya se unió al grupo, puede ignorar este paso.</td></tr>
-    <tr><td bgcolor="#264257" style="padding:22px 28px;text-align:center;font:400 12px/1.6 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#aebbc7">
+    <tr><td style="padding:6px 32px 30px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:400;line-height:1.6;color:#6a737d;text-align:center">Si ya se unió al grupo, puede ignorar este paso.</td></tr>
+    <tr><td bgcolor="#264257" style="padding:22px 28px;text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;line-height:1.6;color:#aebbc7">
       <strong style="color:#ffffff">HAN'EI USA LLC</strong> · MyEB2<br>
       Información de carácter general; no constituye asesoría legal individual ni garantiza resultados.<br>
       Usted recibe este correo porque dejó sus datos para informarse sobre la petición EB-2 NIW.

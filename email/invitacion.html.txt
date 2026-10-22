@@ -5,55 +5,55 @@
     <tr><td align="center" bgcolor="#264257" style="padding:26px 20px 22px"><img src="https://webinar.myeb2.life/email/logo-blanco.png" width="190" alt="HAN'EI USA · MyEB2" style="display:block;border:0;height:auto"></td></tr>
     <tr><td height="4" bgcolor="#B18C3F" style="font-size:0;line-height:0">&nbsp;</td></tr>
     <tr><td style="padding:34px 32px 6px" align="center">
-      <div style="font:700 12px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:2.2px;color:#B18C3F;text-transform:uppercase">Webinar gratuito · Sesión única</div>
-      <div style="font:700 28px/1.25 Georgia,'Times New Roman',serif;color:#264257;padding:12px 0 4px">Estructure una estrategia sólida para su petición EB-2 NIW</div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:2.2px;color:#B18C3F;text-transform:uppercase">Webinar gratuito · Sesión única</div>
+      <div style="font-family:Georgia,serif;font-size:28px;font-weight:700;line-height:1.25;color:#264257;padding:12px 0 4px">Estructure una estrategia sólida para su petición EB-2 NIW</div>
     </td></tr>
-    <tr><td style="padding:10px 32px 4px;font:400 16px/1.65 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540"><p style="margin:0 0 12px">Estimado(a) {{contact.first_name}}:</p>
+    <tr><td style="padding:10px 32px 4px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:400;line-height:1.65;color:#2b3540"><p style="margin:0 0 12px">Estimado(a) {{contact.first_name}}:</p>
 <p style="margin:0">Le invitamos a una sesión en vivo, sin costo, donde explicamos cómo se construye una petición <strong>EB-2 con exención de oferta de empleo (NIW)</strong>: qué evalúa realmente USCIS y cómo ordenar su trayectoria en torno a un <em>Proposed Endeavor</em> claro y defendible.</p></td></tr>
     <tr><td style="padding:14px 32px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e6dfcf;border-radius:8px">
   <tr>
     <td width="33%" align="center" style="padding:18px 6px;border-right:1px solid #eee6d4">
-      <div style="font:700 11px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Fecha</div>
-      <div style="font:700 17px Georgia,'Times New Roman',serif;color:#264257;padding-top:6px">Jueves 29<br>de octubre</div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Fecha</div>
+      <div style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:#264257;padding-top:6px">Jueves 29<br>de octubre</div>
     </td>
     <td width="34%" align="center" style="padding:18px 6px;border-right:1px solid #eee6d4">
-      <div style="font:700 11px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Hora</div>
-      <div style="font:700 17px Georgia,'Times New Roman',serif;color:#264257;padding-top:6px">7:00 p. m.<br><span style="font:400 12px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#6a737d">hora de Houston</span></div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Hora</div>
+      <div style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:#264257;padding-top:6px">7:00 p. m.<br><span style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;color:#6a737d">hora de Houston</span></div>
     </td>
     <td width="33%" align="center" style="padding:18px 6px">
-      <div style="font:700 11px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Modalidad</div>
-      <div style="font:700 17px Georgia,'Times New Roman',serif;color:#264257;padding-top:6px">En vivo<br><span style="font:400 12px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#6a737d">online · ~60 min</span></div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase">Modalidad</div>
+      <div style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:#264257;padding-top:6px">En vivo<br><span style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;color:#6a737d">online · ~60 min</span></div>
     </td>
   </tr>
 </table>
-<div style="font:400 12px/1.5 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#6a737d;text-align:center;padding-top:8px">Equivale a las 7:00 p. m. en Ecuador, Colombia y Perú · 6:00 p. m. en México</div></td></tr><tr><td style="padding:14px 32px">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;line-height:1.5;color:#6a737d;text-align:center;padding-top:8px">Equivale a las 7:00 p. m. en Ecuador, Colombia y Perú · 6:00 p. m. en México</div></td></tr><tr><td style="padding:14px 32px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#264257;border-radius:8px">
   <tr>
     <td width="150" valign="bottom" style="padding:18px 0 0 18px"><img src="https://webinar.myeb2.life/email/dr-fiallos.png" width="140" alt="Dr. Benjamín Fiallos" style="display:block;border:0;height:auto"></td>
     <td valign="middle" style="padding:22px 24px 22px 14px">
-      <div style="font:700 11px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.6px;color:#d9b866;text-transform:uppercase">Presentado por</div>
-      <div style="font:700 21px/1.25 Georgia,'Times New Roman',serif;color:#ffffff;padding-top:6px">Dr. Benjamín Fiallos</div>
-      <div style="font:400 13px/1.5 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#c9d3dc;padding-top:6px">Foreign Legal Consultant<br>Barra de Texas (Estados Unidos)</div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.6px;color:#d9b866;text-transform:uppercase">Presentado por</div>
+      <div style="font-family:Georgia,serif;font-size:21px;font-weight:700;line-height:1.25;color:#ffffff;padding-top:6px">Dr. Benjamín Fiallos</div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:400;line-height:1.5;color:#c9d3dc;padding-top:6px">Foreign Legal Consultant<br>Barra de Texas (Estados Unidos)</div>
     </td>
   </tr>
 </table></td></tr><tr><td style="padding:14px 32px">
-<div style="font:700 13px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase;padding-bottom:4px">Lo que verá en la sesión</div>
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:1.6px;color:#B18C3F;text-transform:uppercase;padding-bottom:4px">Lo que verá en la sesión</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr><td width="26" valign="top" style="padding:7px 0;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font:400 15px/1.55 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540">La visión estratégica del EB-2 NIW y los tres criterios del caso <em>Dhanasar</em>.</td></tr>
-<tr><td width="26" valign="top" style="padding:7px 0;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font:400 15px/1.55 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540">Cómo vincular su experiencia con un <strong>Proposed Endeavor</strong> de alcance nacional.</td></tr>
-<tr><td width="26" valign="top" style="padding:7px 0;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font:400 15px/1.55 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540">Los elementos de la petición que conviene fortalecer antes de presentarla.</td></tr>
-<tr><td width="26" valign="top" style="padding:7px 0;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font:400 15px/1.55 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540">Espacio de preguntas y respuestas en vivo con el Dr. Fiallos.</td></tr>
+<tr><td width="26" valign="top" style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.55;color:#2b3540">La visión estratégica del EB-2 NIW y los tres criterios del caso <em>Dhanasar</em>.</td></tr>
+<tr><td width="26" valign="top" style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.55;color:#2b3540">Cómo vincular su experiencia con un <strong>Proposed Endeavor</strong> de alcance nacional.</td></tr>
+<tr><td width="26" valign="top" style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.55;color:#2b3540">Los elementos de la petición que conviene fortalecer antes de presentarla.</td></tr>
+<tr><td width="26" valign="top" style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;color:#B18C3F">&#10003;</td><td style="padding:7px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.55;color:#2b3540">Espacio de preguntas y respuestas en vivo con el Dr. Fiallos.</td></tr>
 </table></td></tr><tr><td style="padding:14px 32px">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f3ecda;border-left:4px solid #B18C3F;border-radius:4px"><tr><td style="padding:14px 16px;font:400 14px/1.6 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#2b3540"><strong style="color:#264257">Al registrarse</strong> recibirá el enlace de la sesión y el acceso a nuestro <strong>grupo privado de WhatsApp</strong>, donde compartimos avisos, recordatorios y materiales de apoyo.</td></tr></table></td></tr>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f3ecda;border-left:4px solid #B18C3F;border-radius:4px"><tr><td style="padding:14px 16px;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;line-height:1.6;color:#2b3540"><strong style="color:#264257">Al registrarse</strong> recibirá el enlace de la sesión y el acceso a nuestro <strong>grupo privado de WhatsApp</strong>, donde compartimos avisos, recordatorios y materiales de apoyo.</td></tr></table></td></tr>
     <tr><td style="padding:22px 32px 8px">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto">
   <tr><td align="center" bgcolor="#B18C3F" style="border-radius:6px">
-    <a href="https://webinar.myeb2.life/?utm_source=email&utm_medium=invitacion&utm_campaign=oct29" target="_blank" style="display:inline-block;padding:16px 34px;font:700 16px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:.3px;color:#ffffff;text-decoration:none;border-radius:6px">Reservar mi lugar sin costo</a>
+    <a href="https://webinar.myeb2.life/?utm_source=email&utm_medium=invitacion&utm_campaign=oct29" target="_blank" style="display:inline-block;padding:16px 34px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;letter-spacing:.3px;color:#ffffff;text-decoration:none;border-radius:6px">Reservar mi lugar sin costo</a>
   </td></tr>
 </table></td></tr>
-    <tr><td style="padding:6px 32px 30px;font:400 13px/1.6 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#6a737d;text-align:center">Cupos limitados para la sesión en vivo. Si ya se registró, no necesita hacer nada más.</td></tr>
-    <tr><td bgcolor="#264257" style="padding:22px 28px;text-align:center;font:400 12px/1.6 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#aebbc7">
+    <tr><td style="padding:6px 32px 30px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:400;line-height:1.6;color:#6a737d;text-align:center">Cupos limitados para la sesión en vivo. Si ya se registró, no necesita hacer nada más.</td></tr>
+    <tr><td bgcolor="#264257" style="padding:22px 28px;text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;line-height:1.6;color:#aebbc7">
       <strong style="color:#ffffff">HAN'EI USA LLC</strong> · MyEB2<br>
       Información de carácter general; no constituye asesoría legal individual ni garantiza resultados.<br>
       Usted recibe este correo porque dejó sus datos para informarse sobre la petición EB-2 NIW.
