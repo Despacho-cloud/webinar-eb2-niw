@@ -3,6 +3,15 @@
  "trailingSlash": false,
  "headers": [
   {
+   "source": "/email/(.*)",
+   "headers": [
+    {
+     "key": "Access-Control-Allow-Origin",
+     "value": "*"
+    }
+   ]
+  },
+  {
    "source": "/(.*)\\.(webp|png|jpg)",
    "headers": [
     {
